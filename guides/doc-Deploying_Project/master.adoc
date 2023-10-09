@@ -1,0 +1,19 @@
+include::common/attributes.adoc[]
+include::common/header.adoc[]
+:deploying-satellite:
+:context: {project-context}
+:ProductName: {ProjectServer}
+
+= {DeployingDocTitle}
+
+// This guide is not ready for stable releases
+ifdef::HideDocumentOnStable[]
+include::common/modules/snip_guide-not-ready.adoc[]
+endif::[]
+ifndef::HideDocumentOnStable[]
+
+ifdef::satellite[]
+include::common/modules/proc_providing-feedback-on-red-hat-documentation.adoc[leveloffset=+1]
+endif::[]
+
+//include::common/assembly_TBD.adoc[leveloffset=+1]
