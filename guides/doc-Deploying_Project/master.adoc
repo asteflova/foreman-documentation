@@ -27,26 +27,44 @@ Outcome: You now have an up-and-running system management infrastructure and you
 
 == Installing {Project}
 
-=== Installation docs
+=== Installation docs overview
 
-Links to installation guides.
+As this is supposed to be a post-installation guide, covering any actual installation steps or prerequisites is out of scope (and should be handled as part of the installation guides).
 
-=== Example: How we have {Project} set up in our lab
+=== Best practices: ???
+
+I have no idea what these should be, or if it even makes sense to include best practices for installation scenarios. Maybe installation scenarios well-suited for specific environments and purposes?
+
+== DNS, DHCP, and TFTP configuration
+
+include::common/modules/proc_configuring-dns-dhcp-and-tftp.adoc[leveloffset=+2]
+
+=== Best practices
+
+=== Examples
 
 == Subscription manifests
 
 include::common/modules/proc_importing-a-subscription-manifest-into-foreman-server.adoc[leveloffset=+2]
-// This needs a conditional for context!=deploying to remove the link at the end of the module.
+// This needs a conditional for context!=deploying to remove the link at the end of the module_.
 
-== Hammer CLI interface
+== {Project} management tools
 
-=== About Hammer
+=== Web UI, Hammer overview
+
+include::common/modules/proc_logging-in.adoc[leveloffset=+2]
+
+=== Hammer CLI interface
 
 === Install Hammer on a remote host
 
-=== Useful links
+=== Add. resources
+
+Link to the Hammer guide downstream (Hammer CLI reference)
 
 == Deploying organizations
+
+=== {Project} organizations overview
 
 include::common/modules/con_managing-organizations.adoc[leveloffset=+2]
 
@@ -60,4 +78,4 @@ include::common/modules/proc_creating-an-organization.adoc[leveloffset=+2]
 
 Link to Managing Organizations in Admin Guide.
 
-= Map Your Location and Datacenter Topology
+//= Map Your Location and Datacenter Topology
