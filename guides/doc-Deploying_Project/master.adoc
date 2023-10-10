@@ -1,7 +1,7 @@
 include::common/attributes.adoc[]
 include::common/header.adoc[]
 :deploying-satellite:
-:context: {project-context}
+:context: deploying
 :ProductName: {ProjectServer}
 
 = {DeployingDocTitle}
@@ -16,4 +16,48 @@ ifdef::satellite[]
 include::common/modules/proc_providing-feedback-on-red-hat-documentation.adoc[leveloffset=+1]
 endif::[]
 
-//include::common/assembly_TBD.adoc[leveloffset=+1]
+= Setting up Your System Management Infrastructure
+
+First we need to set up the basic components required to begin our setup. In most customer environments, some of these components already exist.
+
+Perform a basic configuration of Sat6 and its embedded Capsule. We also create an organization and import the subscription manifest.
+
+Corresponding Satellite 6 Entities: Satellite 6 Installer, Organization, and Subscription Manifest
+Outcome: You now have an up-and-running system management infrastructure and your Red Hat subscription manifest uploaded and activated.
+
+== Installing {Project}
+
+=== Installation docs
+
+Links to installation guides.
+
+=== Example: How we have {Project} set up in our lab
+
+== Subscription manifests
+
+include::common/modules/proc_importing-a-subscription-manifest-into-foreman-server.adoc[leveloffset=+2]
+// This needs a conditional for context!=deploying to remove the link at the end of the module.
+
+== Hammer CLI interface
+
+=== About Hammer
+
+=== Install Hammer on a remote host
+
+=== Useful links
+
+== Deploying organizations
+
+include::common/modules/con_managing-organizations.adoc[leveloffset=+2]
+
+include::common/modules/proc_creating-an-organization.adoc[leveloffset=+2]
+
+=== Best practices: Using organizations
+
+=== Example: Deleting the default org, creating a custom organization
+
+=== Add. resources
+
+Link to Managing Organizations in Admin Guide.
+
+= Map Your Location and Datacenter Topology
