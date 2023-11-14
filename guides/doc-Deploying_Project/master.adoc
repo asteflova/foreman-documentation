@@ -72,6 +72,8 @@ include::common/modules/proc_creating-an-organization.adoc[leveloffset=+2]
 
 === Best practices: Using organizations
 
+// https://access.redhat.com/documentation/en-us/red_hat_satellite/6.14/html-single/satellite_overview_concepts_and_deployment_considerations/index#chap-Architecture_Guide-Org_Loc_and_Life_Cycle_Environments
+
 === Example: Deleting the default org, creating a custom organization
 
 === Add. resources
