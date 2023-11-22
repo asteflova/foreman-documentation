@@ -17,12 +17,9 @@ endif::[]
 [id="Project_Overview_and_Concepts_{context}"]
 = {Project} Overview and Concepts
 
-{ProjectName} is a system management solution that enables you to deploy, configure, and maintain your systems across physical, virtual, and cloud environments. {Project} provides provisioning, remote management, and monitoring of multiple {EL} deployments with a single, centralized tool. 
-
-ifndef::satellite[]
-This guide contains information about features provided by the Katello plug-in.
-If you do not plan to install the Katello plug-in, ignore these references.
-endif::[]
+[role="_abstract"]
+{ProjectName} is a centralized tool for provisioning, remote management, and monitoring of multiple {EL} deployments.
+With {Project}, you can deploy, configure, and maintain your systems across physical, virtual, and cloud environments.
 
 include::common/assembly_content-and-patch-management-with-project-name.adoc[leveloffset=+1]
 
@@ -34,7 +31,7 @@ include::common/assembly_major-project-components.adoc[leveloffset=+1]
 
 include::common/assembly_tools-for-administration-of-projectname.adoc[leveloffset=+1]
 
-include::common/assembly_supported-usage-and-versions-of-projectcomponents.adoc[leveloffset=+1]
+include::common/assembly_supported-usage-and-versions-of-project-components.adoc[leveloffset=+1]
 
 [[part-Deployment_Planning]]
 = {Project} Deployment Planning
@@ -52,15 +49,3 @@ include::topics/Required_Technical_Users.adoc[]
 
 include::topics/Glossary.adoc[]
 endif::[]
-
-== TODO Find a better place for this
-
-
-Which Content Views should be promoted to which {SmartProxyServer} depends on the {SmartProxy}'s intended functionality.
-Any {SmartProxyServer} can run DNS, DHCP, and TFTP as infrastructure services that can be supplemented, for example, with content or configuration services.
-
-You can update {SmartProxyServer} by creating a new version of a Content View using synchronized content from the Library.
-The new Content View version is then promoted through life cycle environments.
-You can also create in-place updates of Content Views.
-This means creating a minor version of the Content View in its current life cycle environment without promoting it from the Library.
-For example, if you need to apply a security erratum to a Content View used in Production, you can update the Content View directly without promoting to other life cycles.
