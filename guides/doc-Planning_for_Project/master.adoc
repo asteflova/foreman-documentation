@@ -17,7 +17,6 @@ endif::[]
 [id="Project_Overview_and_Concepts_{context}"]
 = {Project} Overview and Concepts
 
-[role="_abstract"]
 {ProjectName} is a centralized tool for provisioning, remote management, and monitoring of multiple {EL} deployments.
 With {Project}, you can deploy, configure, and maintain your systems across physical, virtual, and cloud environments.
 
