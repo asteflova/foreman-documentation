@@ -27,7 +27,7 @@
 :UpdatingDocTitle: Updating {ProjectName}
 :UpgradingDocTitle: Upgrading {ProjectName} to {ProjectVersion}
 :UpgradingPreviousDocTitle: Upgrading {ProjectName} to {ProjectVersionPrevious}
-:DeployingDocTitle: Deploying {ProjectName}
+:SOEDocTitle: Building a Standard Operating Environment
 
 // Not upstreamed
 :APIDocTitle: API Guide

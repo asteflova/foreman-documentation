@@ -1,10 +1,10 @@
 include::common/attributes.adoc[]
 include::common/header.adoc[]
-:deploying-satellite:
-:context: deploying
+:soe:
+:context: soe
 :ProductName: {ProjectServer}
 
-= {DeployingDocTitle}
+= {SOEDocTitle}
 
 // This guide is not ready for stable releases
 ifdef::HideDocumentOnStable[]
