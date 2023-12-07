@@ -45,13 +45,13 @@ include::common/modules/proc_configuring-dns-dhcp-and-tftp.adoc[leveloffset=+2]
 include::common/modules/proc_importing-a-subscription-manifest-into-foreman-server.adoc[leveloffset=+2]
 // This needs a conditional for context!=soe to remove the link at the end of the module_.
 
-== {Project} management tools
+== Administering {Project} with {ProjectWebUI} and Hammer
 
-=== Web UI, Hammer overview
+include::common/modules/con_web-ui-overview.adoc[leveloffset=+1]
 
-include::common/modules/proc_logging-in.adoc[leveloffset=+2]
+include::common/modules/proc_logging-in.adoc[leveloffset=+1]
 
-=== Hammer CLI interface
+include::common/modules/con_hammer-cli-overview.adoc[leveloffset=+2]
 
 === Install Hammer on a remote host
 
