@@ -18,22 +18,19 @@ endif::[]
 
 = Setting up Your System Management Infrastructure
 
-First we need to set up the basic components required to begin our setup. In most customer environments, some of these components already exist.
+[role="_abstract"]
+Perform a basic configuration of {ProjectServer} and its embedded {SmartProxy}.
 
-Perform a basic configuration of Sat6 and its embedded Capsule. We also create an organization and import the subscription manifest.
+You will be dealing with the following {Project} components and concepts:
 
-Corresponding Satellite 6 Entities: Satellite 6 Installer, Organization, and Subscription Manifest
-Outcome: You now have an up-and-running system management infrastructure and your Red Hat subscription manifest uploaded and activated.
+* The `{foreman-installer}` utility
+* Organizations
 
-== Installing {Project}
+After performing the following activities, you will have a functioning system management infrastructure that uses Simple Content Access (SCA) to manage subscriptions.
 
-=== Installation docs overview
+== Prerequisites
 
-As this is supposed to be a post-installation guide, covering any actual installation steps or prerequisites is out of scope (and should be handled as part of the installation guides).
-
-=== Best practices: ???
-
-I have no idea what these should be, or if it even makes sense to include best practices for installation scenarios. Maybe installation scenarios well-suited for specific environments and purposes?
+* You must have a {ProjectServer} installed on a {EL} host. See {InstallingServerDocURL}[{InstallingServerDocTitle}] and {InstallingServerDisconnectedDocURL}[{InstallingServerDisconnectedDocTitle}].
 
 == DNS, DHCP, and TFTP configuration
 
@@ -46,7 +43,7 @@ include::common/modules/proc_configuring-dns-dhcp-and-tftp.adoc[leveloffset=+2]
 == Subscription manifests
 
 include::common/modules/proc_importing-a-subscription-manifest-into-foreman-server.adoc[leveloffset=+2]
-// This needs a conditional for context!=deploying to remove the link at the end of the module_.
+// This needs a conditional for context!=soe to remove the link at the end of the module_.
 
 == {Project} management tools
 
