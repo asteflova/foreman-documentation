@@ -1,5 +1,5 @@
-[id="configuring-keycloak-authentication-for-project_{context}"]
-= Configuring {keycloak-wildfly} authentication for {Project}
+[id="configuring-keycloak-wildfly-authentication-for-project_{context}"]
+= Configuring {keycloak-wildfly} authentication for {Project} (DEPRECATED)
 
 {keycloak} is an open-source identity and access management solution that provides authentication features, such as single sign-on functionality, user federation, or centralized authentication management.
 With {keycloak-wildfly}, you can integrate {ProjectServer} with your existing {keycloak} server to delegate user authentication and authorization to {keycloak}.
