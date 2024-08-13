@@ -1,6 +1,23 @@
 [id="configuring-keycloak-wildfly-authentication-for-project_{context}"]
 = Configuring {keycloak-wildfly} authentication for {Project} (DEPRECATED)
 
+[NOTE]
+====
+ifndef::satellite[]
+The default {keycloak} distribution is now based on Quarkus.
+endif::[]
+ifdef::satellite[]
+The last planned feature release of {keycloak-wildfly} was {keycloak-wildfly}{nbsp}7.6.
+endif::[]
+Support for configuring {Project} with {keycloak-wildfly} is deprecated and will be removed in a future release.
+
+ifndef::satellite[]
+{keycloak-quarkus} replaces {keycloak-wildfly} in {Project} deployments. For information about configuring {keycloak-quarkus} authentication, see xref:configuring-keycloak-quarkus-authentication-for-project_keycloak-quarkus[].
+
+For information about migrating from {keycloak-wildfly} to {keycloak-quarkus}, see link:https://www.keycloak.org/migration/migrating-to-quarkus[Migrating to Quarkus distribution].
+endif::[]
+====
+
 {keycloak} is an open-source identity and access management solution that provides authentication features, such as single sign-on functionality, user federation, or centralized authentication management.
 With {keycloak-wildfly}, you can integrate {ProjectServer} with your existing {keycloak} server to delegate user authentication and authorization to {keycloak}.
 The following login methods are available:
