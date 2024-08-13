@@ -11,10 +11,13 @@ The last planned feature release of {keycloak-wildfly} was {keycloak-wildfly}{nb
 endif::[]
 Support for configuring {Project} with {keycloak-wildfly} is deprecated and will be removed in a future release.
 
-ifndef::satellite[]
 {keycloak-quarkus} replaces {keycloak-wildfly} in {Project} deployments. For information about configuring {keycloak-quarkus} authentication, see xref:configuring-keycloak-quarkus-authentication-for-project_keycloak-quarkus[].
 
+ifndef::satellite[]
 For information about migrating from {keycloak-wildfly} to {keycloak-quarkus}, see link:https://www.keycloak.org/migration/migrating-to-quarkus[Migrating to Quarkus distribution].
+endif::[]
+ifdef::satellite[]
+For information about migrating from {keycloak-wildfly} to {keycloak-quarkus}, see link:https://docs.redhat.com/en/documentation/red_hat_build_of_keycloak/22.0/html-single/migration_guide/index[{keycloak-quarkus} Migration Guide].
 endif::[]
 ====
 
