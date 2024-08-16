@@ -1,0 +1,38 @@
+[id="common-datacenter-topology-scenarios"]
+= Common datacenter topology scenarios
+
+You can use {SmartProxyServers} to scale out your {Project} deployment.
+
+You can create various {SmartProxies} in different geographical locations where datacenters are located.
+These are centrally managed through your {ProjectServer}.
+
+By making your datacenter topology fit your needs, hosts in your distributed locations can communicate to the {SmartProxy} instead of directly to your {ProjectServer} itself.
+You can also select which particular content subset is managed by a specific
+capsule and, therefore, made available to the hosts behind the capsule. For example, a
+capsule associated with a particular lifecycle environment only provides the content (views) available in this environments to its hosts.
+
+== Single location
+
+An _integrated {SmartProxy}_ is a virtual {SmartProxyServer} that is created by default in {ProjectServer} during the installation process.
+This means {ProjectServer} can be used to provision directly connected hosts for {Project} deployment in a single geographical location, therefore only one physical server is needed.
+The base systems of isolated {SmartProxies} can be directly managed by {ProjectServer}, however it is not recommended to use this layout to manage other hosts in remote locations.
+
+== Single location with segregated subnets
+
+Your infrastructure might require multiple isolated subnets even if {ProjectName} is deployed in a single geographic location.
+This can be achieved for example by deploying multiple {SmartProxyServers} with DHCP and DNS services, but the recommended way is to create segregated subnets using a single {SmartProxy}.
+This {SmartProxy} is then used to manage hosts and compute resources in those segregated networks to ensure they only have to access the {SmartProxy} for provisioning, configuration, errata, and general management.
+For more information on configuring subnets see {ManagingHostsDocURL}[_Managing Hosts_].
+
+== Multiple locations
+
+It is recommended to create at least one {SmartProxyServer} per geographic location.
+This practice can save bandwidth since hosts obtain content from a local {SmartProxyServer}.
+Synchronization of content from remote repositories is done only by the {SmartProxy}, not by each host in a location.
+In addition, this layout makes the provisioning infrastructure more reliable and easier to configure.
+
+ifndef::satellite[]
+include::../common/modules/snip_red-hat-images.adoc[]
+endif::[]
+
+image::system-architecture-satellite.png[Content Flow in {ProjectName}]
