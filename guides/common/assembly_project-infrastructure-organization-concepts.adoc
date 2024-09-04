@@ -9,3 +9,5 @@ include::modules/con_organizations.adoc[leveloffset=+1]
 include::modules/con_locations.adoc[leveloffset=+1]
 
 include::modules/con_lifecycle-environments.adoc[leveloffset=+1]
+
+include::modules/con_host-grouping-concepts.adoc[leveloffset=+1]

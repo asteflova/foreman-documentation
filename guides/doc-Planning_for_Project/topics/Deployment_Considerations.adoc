@@ -257,3 +257,5 @@ In addition, you can use the access to the {Project} API to write automation scr
 ifdef::satellite[]
 For more information, see {HammerDocURL}[{HammerDocTitle}] and {APIDocURL}[{APIDocTitle}].
 endif::[]
+
+include::../common/modules/con_host-group-structures.adoc[leveloffset=+2]
