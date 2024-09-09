@@ -40,32 +40,6 @@ endif::[]
 endif::[]
 endif::[]
 
-.Promoting a content view across environments
-When you promote a content view from one environment to the next environment in the application lifecycle, {Project} updates the repository and publishes the packages.
-
-.Promoting a package from _Development_ to _Testing_
-====
-The repositories for _Testing_ and _Production_ contain the `_my-software_-1.0-0.{client-pkg-arch}.{client-pkg-ext}` package:
-
-|===
-| | Development | Testing | Production
-
-| Version of the content view | Version 2 | Version 1 | Version 1
-| Contents of the content view | _my-software_-1.1-0.{client-pkg-arch}.{client-pkg-ext} | _my-software_-1.0-0.{client-pkg-arch}.{client-pkg-ext} | _my-software_-1.0-0.{client-pkg-arch}.{client-pkg-ext}
-|===
-
-If you promote Version 2 of the content view from _Development_ to _Testing_, the repository for _Testing_ updates to contain the `_my-software_-1.1-0.{client-pkg-arch}.{client-pkg-ext}` package:
-
-|===
-| | Development | Testing | Production
-
-| Version of the content view | Version 2 | *Version 2* | Version 1
-| Contents of the content view | _my-software_-1.1-0.{client-pkg-arch}.{client-pkg-ext} | *_my-software_-1.1-0.{client-pkg-arch}.{client-pkg-ext}* | _my-software_-1.0-0.{client-pkg-arch}.{client-pkg-ext}
-|===
-
-This ensures hosts are designated to a specific environment but receive updates when that environment uses a new version of the content view.
-====
-
 ifndef::satellite[]
 With `Distribute archived content view versions` enabled, you can access unprotected repositories in published content view versions.
 The URL consists of your {SmartProxy} FQDN, `/pulp/content/`, your organization label, `/content_views/`, your content view, your content view version, `/custom/`, your product label, `/`, your repository label, and a trailing `/`, for example, `https://{foreman-example-com}/pulp/content/Example/content_views/{client-content-content-view-label}/2.1/custom/{client-content-product-label}/{client-content-repository-label}/`.
