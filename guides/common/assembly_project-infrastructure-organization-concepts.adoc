@@ -5,3 +5,5 @@ include::modules/con_organizations-and-locations-in-project.adoc[leveloffset=+1]
 include::modules/con_host-groups-overview.adoc[leveloffset=+1]
 
 include::modules/con_host-collections-overview.adoc[leveloffset=+1]
+
+include::modules/ref_additional-resources-project-infrastructure-organization-concepts.adoc[leveloffset=+1]
