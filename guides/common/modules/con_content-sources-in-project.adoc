@@ -1,5 +1,5 @@
-[id="content-sources_{context}"]
-= Content sources
+[id="content-sources-in-{ProjectNameID}_{context}"]
+= Content sources in {Project}
 
 The Red{nbsp}Hat Subscription Manifest determines what Red{nbsp}Hat repositories are accessible from your {ProjectServer}.
 Once you enable a Red{nbsp}Hat repository, an associated {Project} product is created automatically.
