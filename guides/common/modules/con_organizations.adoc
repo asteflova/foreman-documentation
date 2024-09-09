@@ -1,6 +1,0 @@
-[id="organizations_{context}"]
-= Organizations
-
-Organizations divide {ProjectName} resources into logical groups based on ownership, purpose, content, security level, or other divisions.
-You can create and manage multiple organizations through {ProjectName}, then divide and assign your subscriptions to each individual organization.
-This provides a method of managing the content of several individual organizations under one management system.

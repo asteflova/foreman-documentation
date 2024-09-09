@@ -1,5 +1,0 @@
-[id="locations_{context}"]
-= Locations
-
-Locations divide organizations into logical groups based on geographical location.
-Each location is created and used by a single account, although each account can manage multiple locations and organizations.
