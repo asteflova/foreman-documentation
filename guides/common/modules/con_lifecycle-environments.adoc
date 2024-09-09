@@ -7,7 +7,7 @@ You can promote content along the environment path to the next lifecycle environ
 For example, if development ends on a particular version of an application, you can promote this version to the testing environment and start development on the next version.
 
 ifndef::satellite[]
-include::../common/modules/snip_red-hat-images.adoc[]
+include::snip_red-hat-images.adoc[]
 endif::[]
 
 [[figu-An_Environment_Path_Containing_Four_Environments]]
