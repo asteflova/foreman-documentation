@@ -8,8 +8,9 @@ The following login methods are available for AD users:
 * Username and password
 * Kerberos single sign-on
 
-{Project} integration with AD has been tested on the following Windows Server versions:
+{Team} supports {Project} integration with AD that runs on the following Windows Server versions:
 
+* Windows Server 2022
 * Windows Server 2019
 
 [NOTE]
